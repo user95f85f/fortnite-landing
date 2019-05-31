@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>where to land in fortnite</title>
+<script type="text/javascript" language="javascript">
+var d = document;
+function go(_s){
+return d.getElementById(_s);
+}
+function body_onloaded(){}
+function btnTellMeWhereToLand_clicked(){
+go('imgKey').style.left = (Math.random() * 920) + "px";
+go('imgKey').style.top = (Math.random() * 814) + "px";
+go('btnTellMeWhereToLand').disabled = 'disabled';
+setTimeout('ticTimer_ticked()', 10000);
+}
+function ticTimer_ticked(){
+go('btnTellMeWhereToLand').disabled = '';
+}
+</script>
+<style type="text/css">
+
+</style>
+</head>
+
+<body onload="body_onloaded();">
+<img src="key.png" style="position:absolute" id="imgKey" />
+<img src="map.png" />
+<br /><input type="button" id="btnTellMeWhereToLand" value="Tell me where to land" onclick="btnTellMeWhereToLand_clicked()" />
+</body>
+</html>
